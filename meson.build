@@ -9,6 +9,10 @@ src_files = files(
   'src/clock.cpp'
 )
 
+exe = executable('ctest', 'ctest.cc',
+  install: true
+)
+
 library('cachesim', src_files,
   install : true
 )
